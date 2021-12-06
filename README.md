@@ -1,8 +1,10 @@
-# Movio
+## React Native Typescript Template App
 
 <!-- ![](https://imgur.com/mqlQYyF) -->
 
 ## Description:
+
+An typescript configured React Native template app, created to speed up the development of new applications
 
 ## Prerequisites:
 
@@ -13,7 +15,7 @@ These instructions will get you a copy of the project up and running on your loc
 Assuming you have your machine pre-configured to clone github repositories (if you have not configured it, visit [this documentation](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)), clone the repository using the following command in the terminal:
 
 ```
-git clone git@github.com:wcamposs/RNTemplateApp.git
+git clone git@github.com:wcamposs/react-native-typescript-template-app.git
 ```
 
 **Installation and configuration:**
@@ -46,19 +48,69 @@ After installation, the project can be considered configured and ready to run.
 
 ## Getting Started:
 
-Assuming you are in the root directory via a terminal, run the following command to run Expo:
+Assuming you are in the root directory via a terminal, run the following command to run the installation app command:
 
 1. Using Yarn:
 
 ```
-yarn start
+yarn android
+```
+
+or
+
+```
+yarn ios
 ```
 
 2. Using NPM:
 
 ```
+npm android
+```
+
+or
+
+```
+npm ios
+```
+
+## Configuring device port:
+
+### On emulator
+
+Assuming that you started the android emulator:
+
+- click on emulator and press **CTRL + M** (for android) or **Command + D** (for iOS) to open the dev menu;
+- Click on **settings** option
+- Click on **Debug server host && port for device**
+- Put **10.0.2.2:8081** or **your-machine-ip:8081**
+
+### On physical device (Android or iOS):
+
+- Shake the device 2 or 3 times, until the dev menu appears;
+- Click on **settings** option
+- Click on **Debug server host && port for device**
+- Put **10.0.2.2:8081** or **your-machine-ip:8081**
+
+**Obs:** Is recommended to use the same wi-fi network for the machine running and physical device
+
+## Running application:
+
+Once you successfully installed the app on configurated the correct ip and port, run on terminal:
+
+If you're using Yarn
+
+```
+yarn start
+```
+
+Or if you're using NPM
+
+```
 npm start
 ```
+
+**Obs:** If you opened the app before running the **start** command, close the app and re-open. If the bundle progress bars appears, the app should compile and run correctly.
 
 ## Built With:
 

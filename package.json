@@ -5,7 +5,7 @@
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
-    "start": "npx react-native start --reset-cache --port 9091",
+    "start": "npx react-native start --reset-cache --port 8081",
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "cleanAndInstall": "rm -rf node_modules && npm install && npm audit fix",
